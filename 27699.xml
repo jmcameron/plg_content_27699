@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_27699</name>
+	<author>Roberto Segura</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C) 2012 Roberto Segura. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>roberto@phproberto.com</authorEmail>
+	<authorUrl>www.phproberto.com</authorUrl>
+	<version>0.0.1</version>
+	<description>Content test plugin</description>
+	<files>
+		<filename plugin="27699">27699.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+		</fieldset>
+	</fields>
+	</config>
+</extension>
