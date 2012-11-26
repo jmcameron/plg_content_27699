@@ -64,6 +64,16 @@ class PlgContent27699 extends JPlugin
 		$this->_view   = $jinput->get('view', null);
 		$this->_id     = $jinput->get('id', null);
 
+		/**
+		 * Test Backwards Compatibility
+		 * Old plugins only process $article->text
+		 * New plugins should be able to access the article->title
+		 **/
+		$article->text .= '<h1>IT WORKS!</h1>';
+		//$article->introtext = str_replace('{27699}', '<h1>IT WORKS!</h1>', $article->introtext);
+		// Display title to ensure that the property is available
+		echo var_dump($article->title);
+
 		if ($app->isSite())
 		{
 			$properties = get_object_vars($article);

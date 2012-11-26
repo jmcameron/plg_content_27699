@@ -7,7 +7,7 @@
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>roberto@phproberto.com</authorEmail>
 	<authorUrl>www.phproberto.com</authorUrl>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<description>Content test plugin</description>
 	<files>
 		<filename plugin="27699">27699.php</filename>
