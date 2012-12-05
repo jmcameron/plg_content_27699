@@ -69,10 +69,11 @@ class PlgContent27699 extends JPlugin
 		 * Old plugins only process $article->text
 		 * New plugins should be able to access the article->title
 		 **/
-		$article->text .= '<h1>IT WORKS!</h1>';
+		$title = isset($article->title) ? $article->title : "No title!";
+		$article->text .= '<h1>IT WORKS! ('.$context.'), Title='.$title.'</h1>';
 		//$article->introtext = str_replace('{27699}', '<h1>IT WORKS!</h1>', $article->introtext);
 		// Display title to ensure that the property is available
-		echo var_dump($article->title);
+		// echo var_dump($article->title);
 
 		if ($app->isSite())
 		{
